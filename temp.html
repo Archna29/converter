@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name ="description" content="index,initial-scale=1">
+<style>
+body{
+font-family:arial;
+background:#333;
+}
+H1{
+margin-bottom:10px;
+text-align:center;
+line-height:40px;
+Color:white;
+}
+.form p{
+margin-top:5px;
+color:#888;
+height:10px;
+}
+#task{
+margin:5px;
+color:white;
+width:100%;
+background:transparent;
+height:30px;
+border:none;
+margin-bottom:-4px;
+font-size:20px;
+}
+.but{
+margin:10px;
+padding:10px;
+position:relative;
+left:35%;
+display:block;
+width:35%;
+display:none;
+}
+ #conv{
+ margin:10px;
+ position:relative;
+left:35%;
+width:30%;
+color:white;
+font-size:24px;
+background:transparent;
+height:60px;
+}
+#f,#c{
+margin:10px;
+background:transparent;
+width:4%;
+height:16px;
+display:inline;
+
+}
+span{
+font-size:20px;
+color:#ccc;
+}
+#result{
+font-size:24px;
+text-align:center;
+color:white;
+margin-top:20px;
+}
+</style>
+
+</head>
+<body>
+<H1>Temperature Converter</h1><hr color="#0080FF"></hr>
+<div class="form">
+<p>Temperature (in degrees)</p>
+<input type ="textbox"id="task"/>
+<hr color="#008ECC"></hr>
+</div>
+<button id="conv">Convert</button><br>
+<div class="but"id="s">
+<input type="radio" id="f"name="a"/><span>To Farhenheit</span><br>
+<input type="radio" id="c"name="a"/><span>To Celsius</span>
+</div>
+
+<p id ="result"></p>
+<script src="temp.js"></script>
+</body>
+</html>
